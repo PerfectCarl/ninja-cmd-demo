@@ -1,0 +1,5 @@
+project:
+    name: %PROJECT_NAME%
+    standalone: true
+    dependencies:
+       - 'org.ninjaframework:ninja-standalone:5.1.3'

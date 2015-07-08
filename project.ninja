@@ -1,0 +1,21 @@
+# Project
+  name: empty
+  dependencies:
+    # Ninja
+    - org.ninjaframework:ninja-standalone:5.1.3
+    # - org.ninjaframework:ninja-servlet:5.1.3
+    # Ninja modules
+    - org.eclipse.xtend:org.eclipse.xtend.lib:2.8.3
+    - org.ninjaframework:jade4ninja-module:0.4.0-SNAPSHOT
+    # - org.ninjaframework:jade4ninja-module:0.4.0
+    # - org.ninjaframework:ninja-ebean-module:1.5.0
+    # - org.ninjaframework:ninja-rythm-module:0.0.1
+    # Application libraries
+    - com.h2database:h2:1.4.186
+    # Web resources (javascript, css...)
+    - org.webjars:jquery:2.1.3
+    - org.webjars:bootstrap:3.3.4
+  repositories: 
+    #- https://github.com/mysu/jade4ninja/blob/mvn-repo/[organisation]/[module]/[revision]/[artifact]-[revision].[type]"
+   # - https://github.com/mysu/jade4ninja/blob/mvn-repo/org/ninjaframework/jade4ninja-module/0.3.0/jade4ninja-module-0.3.0.jar
+  #  - https://github.com/mysu/jade4ninja/raw/mvn-repo/org/ninjaframework/[module]/[revision]/[artifact]-[revision].[type]
