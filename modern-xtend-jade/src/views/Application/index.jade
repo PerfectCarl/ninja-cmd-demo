@@ -1,0 +1,8 @@
+block params
+  - title='Home page'
+extend ../layout/defaultLayout
+
+block content
+  h1 #{i18n.value("hello.world")}
+  p #{i18n.value("hello.world.json")}
+  a(href="/hello_world.json") Bonsoir Json

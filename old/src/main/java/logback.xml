@@ -1,0 +1,33 @@
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+    <appender name="STDOUT_TERSE" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+    <encoder>
+      <pattern> | %msg%n</pattern>
+    </encoder>
+  </appender>
+  
+  <!--  Hiding logging bits --> 
+  <logger name="ninja.bodyparser.BodyParserEngineManagerImpl" level="WARN" additive="false"/>
+  <logger name="ninja.template.TemplateEngineManagerImpl" level="WARN" additive="false"/>
+  <logger name="ninja.RouterImpl" level="WARN" additive="false"/>
+  <logger name="ninja.servlet.NinjaBootstrap" level="WARN" additive="false"/>
+  
+  <logger name="org.eclipse.jetty.util.log" level="WARN" additive="false"/>
+  <logger name="org.eclipse.jetty.server.Server" level="WARN" additive="false"/>
+  <logger name="org.eclipse.jetty.server.handler.ContextHandler" level="WARN" additive="false"/>
+  <logger name="org.eclipse.jetty.server.ServerConnector" level="WARN" additive="false"/>
+  
+  <root level="info">
+    <appender-ref ref="STDOUT_TERSE" />
+  </root>
+</configuration>
